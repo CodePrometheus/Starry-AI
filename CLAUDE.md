@@ -39,3 +39,8 @@ Four independent module areas:
 ## Key Dependencies
 
 torch, torchvision, numpy, langchain, fastapi, uvicorn, gradio, Pillow, opencv-python, matplotlib, pandas, nltk
+
+## Code Style Preferences
+
+- 注释要丰富详细，尤其是学习脚本中的数学公式、计算过程和直觉解释，帮助理解每一步在做什么
+- 运行 Python 脚本使用：`/opt/homebrew/bin/uv run /Users/zhouzixin/Learn/mini-aime/.venv/bin/python3 <script.py>`
