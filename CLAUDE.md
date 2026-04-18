@@ -45,8 +45,17 @@ torch, torchvision, numpy, langchain, fastapi, uvicorn, gradio, Pillow, opencv-p
 - 注释要丰富详细，尤其是学习脚本中的数学公式、计算过程和直觉解释，帮助理解每一步在做什么
 - 运行 Python 脚本使用 uv
 
+## Learning Principles
+
+- This repository is for hands-on, code-first learning rather than abstract discussion detached from implementation
+- Learning must follow the predefined roadmap without drifting, skipping around, or expanding without clear scope
+- The default learning style should be: concept breakdown, classic examples, manual implementation, and run-time verification
+- Prefer understanding the principles through handwritten code and step-by-step code decomposition before moving to framework abstractions
+- Learning scripts may use `TODO(human)` to mark exercises that should be completed by the user
+- Once the user has implemented the exercise correctly, the corresponding `TODO(human)` should be removed to mark it as completed
+
 ## Commit Requirements
 
-- 所有 git commit message 都必须包含 `Co-authored-by` trailer
-- `Co-authored-by` 必须根据本次实际使用的模型/助手填写
-- 例如可以是：`Co-authored-by: GitHub Copilot`、`Co-authored-by: Claude`、`Co-authored-by: gemini-code-assist`
+- Every git commit message must include a `Co-authored-by` trailer
+- The `Co-authored-by` value must reflect the actual model or coding assistant used in that specific change
+- Example values include: `Co-authored-by: GitHub Copilot`, `Co-authored-by: Claude`, and `Co-authored-by: gemini-code-assist`

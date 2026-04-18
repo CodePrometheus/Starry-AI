@@ -222,12 +222,9 @@ print("\n" + "=" * 60)
 print("5. 最大似然估计 (MLE)")
 print("=" * 60)
 
-# TODO(human): 实现硬币的最大似然估计
 # 给定抛硬币的结果，找出最可能的正面概率 p
 def coin_mle(flips):
     """
-    TODO(human): 计算硬币正面朝上的最大似然估计
-
     参数：
         flips: numpy 数组，1 表示正面，0 表示反面
                例如 [1, 1, 0, 1, 0, 1, 1, 1, 0, 1]
@@ -241,7 +238,8 @@ def coin_mle(flips):
         想想为什么频率就是最大似然估计？
         因为这个 p 值能让观测到的数据出现的概率最大
     """
-    pass
+    count_1 = np.sum(flips)
+    return count_1 / len(flips)
 
 
 # 测试
