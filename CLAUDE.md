@@ -56,6 +56,7 @@ torch, torchvision, numpy, langchain, fastapi, uvicorn, gradio, Pillow, opencv-p
 - Avoid outline-style or slogan-style explanations in learning materials when the user is asking for direct concept clarification
 - When multiple columns or cases follow the same rule, explain the general rule once and then show one representative worked example instead of repeating the same explanation mechanically
 - Learning scripts may use `TODO(human)` to mark exercises that should be completed by the user
+- New learning chapters should include at least one explicit `TODO(human)` exercise by default, unless the user explicitly asks for explanation-only material
 - Once the user has implemented the exercise correctly, the corresponding `TODO(human)` should be removed to mark it as completed
 
 ## Commit Requirements
