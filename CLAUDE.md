@@ -42,8 +42,7 @@ torch, torchvision, numpy, langchain, fastapi, uvicorn, gradio, Pillow, opencv-p
 
 ## Code Style Preferences
 
-- 注释要丰富详细，尤其是学习脚本中的数学公式、计算过程和直觉解释，帮助理解每一步在做什么
-- 运行 Python 脚本使用 uv
+- Use `uv` to run Python scripts
 
 ## Learning Principles
 
@@ -51,6 +50,11 @@ torch, torchvision, numpy, langchain, fastapi, uvicorn, gradio, Pillow, opencv-p
 - Learning must follow the predefined roadmap without drifting, skipping around, or expanding without clear scope
 - The default learning style should be: concept breakdown, classic examples, manual implementation, and run-time verification
 - Prefer understanding the principles through handwritten code and step-by-step code decomposition before moving to framework abstractions
+- When explaining abstract code, formulas, or data transformations, use the actual data in the current script to give at least one concrete worked example before generalizing
+- Use the current script's real samples, feature values, matrices, and outputs as the default teaching examples; avoid placeholder or fabricated examples when real data is available
+- Code comments should optimize for learner understanding: explain what a specific real input becomes after the transformation, not just abstract shapes or API behavior
+- Avoid outline-style or slogan-style explanations in learning materials when the user is asking for direct concept clarification
+- When multiple columns or cases follow the same rule, explain the general rule once and then show one representative worked example instead of repeating the same explanation mechanically
 - Learning scripts may use `TODO(human)` to mark exercises that should be completed by the user
 - Once the user has implemented the exercise correctly, the corresponding `TODO(human)` should be removed to mark it as completed
 
