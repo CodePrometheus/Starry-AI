@@ -43,4 +43,10 @@ torch, torchvision, numpy, langchain, fastapi, uvicorn, gradio, Pillow, opencv-p
 ## Code Style Preferences
 
 - 注释要丰富详细，尤其是学习脚本中的数学公式、计算过程和直觉解释，帮助理解每一步在做什么
-- 运行 Python 脚本使用：`/opt/homebrew/bin/uv run /Users/zhouzixin/Learn/mini-aime/.venv/bin/python3 <script.py>`
+- 运行 Python 脚本使用 uv
+
+## Commit Requirements
+
+- 所有 git commit message 都必须包含 `Co-authored-by` trailer
+- `Co-authored-by` 必须根据本次实际使用的模型/助手填写
+- 例如可以是：`Co-authored-by: GitHub Copilot`、`Co-authored-by: Claude`、`Co-authored-by: gemini-code-assist`
