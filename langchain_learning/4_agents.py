@@ -67,9 +67,10 @@ from langchain.agents import create_sql_agent
 from langchain.agents.agent_toolkits import SQLDatabaseToolkit
 from langchain.sql_database import SQLDatabase
 
-# mysql+pymysql://user:pass@some_mysql_db_address/db_name
+# 本地示例连接串
+# mysql+pymysql://demo_user:demo_password@localhost:3306/demo_db?charset=utf8
 db = SQLDatabase.from_uri(
-    "mysql+pymysql://marking-util-dev_ddl:h3tZ90xt2yV(beDU@10.31.117.178:3306/marking-util-dev?charset=utf8",
+    "mysql+pymysql://demo_user:demo_password@localhost:3306/demo_db?charset=utf8",
     include_tables=['oc_knowledge_management'],
     sample_rows_in_table_info=2
 )
